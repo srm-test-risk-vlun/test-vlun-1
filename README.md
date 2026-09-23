@@ -138,3 +138,12 @@ This is a sample Node.js repository created for testing purposes. It includes de
 
 - **Tag**: `v1.0.0-test-vlun-1-20260923-124334-r3`
 - **Branch**: `main`
+
+
+---
+## Release Notes — v1.0.0-test-vlun-1-20260923-124439-r4
+
+> Auto-generated on 2026-09-23 12:44:39 UTC (release 4/5 for repo test-vlun-1)
+
+- **Tag**: `v1.0.0-test-vlun-1-20260923-124439-r4`
+- **Branch**: `main`
