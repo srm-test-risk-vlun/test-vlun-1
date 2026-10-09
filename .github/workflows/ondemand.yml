@@ -1,0 +1,26 @@
+name: Test DigiCert Code Scan Action (act local)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scan:
+    name: CodeQL + SBOM (local via act)
+    runs-on: ubuntu-latest
+
+    # CodeQL + trivy + upload-artifact need these.
+    permissions:
+      contents: read
+      actions: read
+      security-events: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run DigiCert Code Scan composite action (local)
+        uses: ./.github/actions/digicert-code-scan
+        with:
+          host: https://sailorly-unpreciously-zoey.ngrok-free.dev
+          region: Unknown-Unknown
+          api-key: ${{ secrets.DIGICERT_BACKEND_API_KEY }}
